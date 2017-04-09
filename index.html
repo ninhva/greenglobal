@@ -21,7 +21,7 @@
   <meta property="og:url" content="" />
   <!-- Google Font -->
   <!-- include styles.html -->
-  <link rel="stylesheet" href="style/style-57dd5db93f.min.css">
+  <link rel="stylesheet" href="style/style-0084f31372.min.css">
 </head>
 
 <body>
@@ -29,6 +29,9 @@
     <!-- include header.html -->
     <header class="header-container">
       <div class="header-content">
+        <div class="btn-top-wrap dk-hide">
+          <a href="#" class="btn-work-with-us">Work with us</a>
+        </div>
         <div class="center">
           <div class="header-wrap">
             <h1 class="logo" id="logo">
@@ -43,10 +46,11 @@
               <div class="bottom-content">
                 <nav class="nav-menu">
                   <ul class="menu-list">
-                    <li class="items is-active"><a href="our-work.html" class="menu-link">Our work</a></li>
-                    <li class="items"><a href="#" class="menu-link">Services</a></li>
-                    <li class="items"><a href="#" class="menu-link">Clients</a></li>
-                    <li class="items"><a href="#" class="menu-link">About</a></li>
+                    <li class="items dk-hide is-active"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="items @@our-work"><a href="our-work.html" class="menu-link">Our work</a></li>
+                    <li class="items @@services"><a href="#" class="menu-link">Services</a></li>
+                    <li class="items @@clients"><a href="#" class="menu-link">Clients</a></li>
+                    <li class="items @@about"><a href="#" class="menu-link">About</a></li>
                   </ul>
                 </nav>
                 <div class="btn-wrap">
@@ -67,7 +71,7 @@
     <!-- include banner.html -->
     <section class="banner-container">
       <div class="banner-slider-content">
-        <div class="banner-slider-items" style="background-image: url('./images/home/banner.png');">
+        <div class="banner-slider-items" style="background-color: #;background-image: url('./images/home/banner.png');">
           <div class="center">
             <div class="banner-items-wrap">
               <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Green Global</p>
@@ -98,7 +102,38 @@
             </div>
           </div>
         </div>
-        <div class="banner-slider-items" style="background-image: url('./images/home/banner-02.png');">
+        <div class="banner-slider-items" style="background-color: #2b99fb;background-image: url('./images/home/banner-01.png');">
+          <div class="center">
+            <div class="banner-items-wrap">
+              <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Stratup Consulting</p>
+              <p class="banner-description slider-effect effect-two" data-in="fadeInUp" data-out="fadeOutDown">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+              <div class="banner-detail">
+                <div class="items-detail slider-effect effect-three" data-in="fadeInRight" data-out="fadeOutRight">
+                  <div class="items-detail-wrap">
+                    <p class="item-number">200+</p>
+                    <p class="item-name">Clients</p>
+                  </div>
+                </div>
+                <div class="items-detail slider-effect effect-four" data-in="fadeInRight" data-out="fadeOutRight">
+                  <div class="items-detail-wrap">
+                    <p class="item-number">300+</p>
+                    <p class="item-name">Projects</p>
+                  </div>
+                </div>
+                <div class="items-detail slider-effect effect-five" data-in="fadeInRight" data-out="fadeOutRight">
+                  <div class="items-detail-wrap">
+                    <p class="item-number">08</p>
+                    <p class="item-name">Countries</p>
+                  </div>
+                </div>
+              </div>
+              <div class="viewmore-content slider-effect effect-four" data-in="fadeInUp" data-out="fadeOutDown">
+                <a href="#" class="viewmore-link">View more <i class="gg gg-view-more"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-slider-items" style="background-color: #00aa90;background-image: url('./images/home/banner-02.png');">
           <div class="center">
             <div class="banner-items-wrap">
               <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Website Development</p>
@@ -129,7 +164,7 @@
             </div>
           </div>
         </div>
-        <div class="banner-slider-items" style="background-image: url('./images/home/banner-03.png');">
+        <div class="banner-slider-items" style="background-color: #354158;background-image: url('./images/home/banner-03.png');">
           <div class="center">
             <div class="banner-items-wrap">
               <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Mobile App</p>
@@ -160,7 +195,7 @@
             </div>
           </div>
         </div>
-        <div class="banner-slider-items" style="background-image: url('./images/home/banner-04.png');">
+        <div class="banner-slider-items" style="background-color: #5c3584;background-image: url('./images/home/banner-04.png');">
           <div class="center">
             <div class="banner-items-wrap">
               <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Creative Design</p>
@@ -191,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="banner-slider-items" style="background-image: url('./images/home/banner.png');">
+        <div class="banner-slider-items" style="background-color: #334057;background-image: url('./images/home/banner-05.png');">
           <div class="center">
             <div class="banner-items-wrap">
               <p class="banner-title slider-effect effect-one" data-in="fadeInUp" data-out="fadeOutDown">Softwave Development</p>
@@ -225,8 +260,18 @@
       </div>
       <div class="banner-nav-slider-container">
         <div class="center">
-          <div class="banner-nav-slider ">
-            <div class="banner-nav-items">
+          <div class="banner-nav-slider">
+            <div class="banner-nav-items" data-slide="0" style="display: none;">
+              <div class="banner-nav-wrap">
+                <div class="img-content">
+                  <img src="./images/home/nav-slider-1.png" alt="">
+                </div>
+                <div class="text-content">
+                  <p class="banner-nav-text">Company<br/></p>
+                </div>
+              </div>
+            </div>
+            <div class="banner-nav-items" data-slide="1">
               <div class="banner-nav-wrap">
                 <div class="img-content">
                   <img src="./images/home/nav-slider-1.png" alt="">
@@ -236,7 +281,7 @@
                 </div>
               </div>
             </div>
-            <div class="banner-nav-items">
+            <div class="banner-nav-items" data-slide="2">
               <div class="banner-nav-wrap">
                 <div class="img-content">
                   <img src="./images/home/nav-slider-2.png" alt="">
@@ -246,7 +291,7 @@
                 </div>
               </div>
             </div>
-            <div class="banner-nav-items">
+            <div class="banner-nav-items" data-slide="3">
               <div class="banner-nav-wrap">
                 <div class="img-content">
                   <img src="./images/home/nav-slider-3.png" alt="">
@@ -256,7 +301,7 @@
                 </div>
               </div>
             </div>
-            <div class="banner-nav-items">
+            <div class="banner-nav-items" data-slide="4">
               <div class="banner-nav-wrap">
                 <div class="img-content">
                   <img src="./images/home/nav-slider-4.png" alt="">
@@ -266,7 +311,7 @@
                 </div>
               </div>
             </div>
-            <div class="banner-nav-items">
+            <div class="banner-nav-items" data-slide="5">
               <div class="banner-nav-wrap">
                 <div class="img-content">
                   <img src="./images/home/nav-slider-5.png" alt="">
@@ -634,7 +679,7 @@
   </div>
 
   <!-- include scripts.html -->
-  <script src="script/script-b4811b3ea3.min.js"></script>
+  <script src="script/script-b02aefb58c.min.js"></script>
 </body>
 
 </html>
